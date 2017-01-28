@@ -7,7 +7,7 @@ class SearchBar extends Component {
 
         this.state = { term: '' };
     }
-    // Value of input is changed only by state. OnChange triggered function and set new State value
+    // Value of input is changed only by state.
     render() {
         return (
             <div className="search-bar">
@@ -17,7 +17,7 @@ class SearchBar extends Component {
             </div>
         );
     }
-
+    // If input changed sets up search_term state and fires function
     onInputChange(term){
         this.setState({term});
         this.props.onSearchTermChange(term);
