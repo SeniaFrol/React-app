@@ -3,13 +3,13 @@ import React from 'react';
 const VideoDetail = ({video}) => {
     // const video = props.video; as u can realise at the top same with this comment
 
+    // if video isn't available then wait until it'll be ready
     if (!video){
         return <div>Loading...</div>;
     }
 
     const videoId = video.id.videoId;
     const url = `https://www.youtube.com/embed/${videoId}`;
-    console.log(video);
 
 
     return (

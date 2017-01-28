@@ -19,6 +19,7 @@ class App extends Component {
             selectedVideo: null
         };
 
+        // initialisation of default search
         this.videoSearch('React tutorial');
 
 
@@ -35,6 +36,7 @@ class App extends Component {
     }
 
     render() {
+      // 300 ms delay using lodash.debounce
         const videoSearch = _.debounce((term) => {this.videoSearch(term) }, 300);
 
 
