@@ -2,6 +2,7 @@ import React from 'react';
 import VideoListItem from './video-list-item';
 
 const VideoList = (props) => {
+    // onVideoSelect goes down to the video-list-item
     const videoItems = props.vide.map((video) => {
         return (
             <VideoListItem
